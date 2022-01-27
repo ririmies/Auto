@@ -37,7 +37,7 @@ namespace Auto.Pages.Parts
             {
                 return NotFound();
             }
-           ViewData["AppointmentID"] = new SelectList(_context.Programare, "ID", "ID");
+           ViewData["AppointmentID"] = new SelectList(_context.Programare, "ID", "Date");
             return Page();
         }
 

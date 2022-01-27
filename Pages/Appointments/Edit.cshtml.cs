@@ -38,8 +38,8 @@ namespace Auto.Pages.Appointments
             {
                 return NotFound();
             }
-           ViewData["CarID"] = new SelectList(_context.Masina, "ID", "ID");
-           ViewData["GarageID"] = new SelectList(_context.Service, "ID", "ID");
+           ViewData["CarID"] = new SelectList(_context.Masina, "ID", "FullName");
+           ViewData["GarageID"] = new SelectList(_context.Service, "ID", "Name");
             return Page();
         }
 

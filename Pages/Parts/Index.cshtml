@@ -5,12 +5,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Car Parts</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Add new part</a>
 </p>
-<table class="table">
+<table class="table bg-parts-table" >
     <thead>
         <tr>
             <th>
@@ -20,7 +20,8 @@
                 @Html.DisplayNameFor(model => model.Part[0].Price)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Part[0].Programare)
+                @*@Html.DisplayNameFor(model => model.Part[0].Programare)*@
+                Appointment Date
             </th>
             <th></th>
         </tr>

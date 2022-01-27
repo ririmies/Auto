@@ -5,9 +5,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Edit appointment</h1>
 
-<h4>Appointment</h4>
+@*<h4>Appointment</h4>*@
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -20,12 +20,12 @@
                 <span asp-validation-for="Appointment.Date" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Appointment.GarageID" class="control-label"></label>
+                <label asp-for="Appointment.GarageID" class="control-label">Garage</label>
                 <select asp-for="Appointment.GarageID" class="form-control" asp-items="ViewBag.GarageID"></select>
                 <span asp-validation-for="Appointment.GarageID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Appointment.CarID" class="control-label"></label>
+                <label asp-for="Appointment.CarID" class="control-label">Car</label>
                 <select asp-for="Appointment.CarID" class="form-control" asp-items="ViewBag.CarID"></select>
                 <span asp-validation-for="Appointment.CarID" class="text-danger"></span>
             </div>

@@ -5,22 +5,24 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Appointments</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Add new appointment</a>
 </p>
-<table class="table">
+<table class="table bg-appointments-table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Appointment[0].Date)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Appointment[0].Service)
+                @*@Html.DisplayNameFor(model => model.Appointment[0].Service)*@
+                Garage
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Appointment[0].Masina)
+                @*@Html.DisplayNameFor(model => model.Appointment[0].Masina)*@
+                Car
             </th>
             <th></th>
         </tr>
